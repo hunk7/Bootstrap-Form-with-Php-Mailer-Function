@@ -53,10 +53,10 @@ if(isset($_POST['sign_up_as'])) {
     echo "Invalid";
 }
 	
-// Create the email and send the message chetna@fireblazeaischoo.in
-$to = 'shubham.fireblaze@gmail.com'; // shubham.fireblaze@gmail.com Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+// Create the email and send the message example@yourmail.com
+$to = 'example@yourmail.com'; // example@yourmail.com Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Participation of $fname $lname | $subject";
-$email_body = "New Participation has arrived form Firethon Registeration form.\n\n"."Here are the details:\n\nName: $fname $lname \n\n Team Members - \n\nName: $fname1 $lname1 \n\nName: $fname2 $lname2 \n\nEmail: $email_address \n\nPhone Number: $phone \n\n city: $city \n\n Signed Up As :$sign_up_as \n\n Company / College: $comp_coll \n\n Gender: $gender \n\n linkedin: $linkedin \n\n github: $github \n\n Will Attend Firethon: $subject  \n\n I Get To Know About The Firethon from : $get_to_know";
+$email_body = "New Participation has arrived from Registeration form.\n\n"."Here are the details:\n\nName: $fname $lname \n\n Team Members - \n\nName: $fname1 $lname1 \n\nName: $fname2 $lname2 \n\nEmail: $email_address \n\nPhone Number: $phone \n\n city: $city \n\n Signed Up As :$sign_up_as \n\n Company / College: $comp_coll \n\n Gender: $gender \n\n linkedin: $linkedin \n\n github: $github \n\n Will Attend Firethon: $subject  \n\n I Get To Know About The Firethon from : $get_to_know";
 $headers = "From: $email_address \n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com. 
 $headers .= "Reply-To: $email_address";	
 // for checking if $variable is working or not!!!
